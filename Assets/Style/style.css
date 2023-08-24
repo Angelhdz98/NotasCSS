@@ -1,0 +1,25 @@
+/* 
+comentarios en CSS
+
+Reglas 
+1ero selector (p)
+2do propiedad (color, fuente, etc)
+3ero valor (blue. xxlarge, times new roman etc.)
+*/
+p {
+    background-color: blue;
+
+
+
+} 
+/**/
+
+#Brandon{
+    color: red;
+}
+
+.CH31{
+    color:darkkhaki;
+
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/Style/style.css">
+
+<!-- Aquí van los estilo externos (dentro del head)  -->
+
+</head>
+<body>
+    <h1>Introducción a CSS</h1>
+    <h2>Diferencias de modificación de estilos 
+        <br>
+        En linea:
+    </h2>
+    <p style="background-color:aquamarine; color:blue; font-size:large; font-family:'Times New Roman', Times, serif"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab incidunt accusantium aperiam. Quas culpa voluptatibus impedit quod! Ducimus quae, dolor molestias nulla fuga earum possimus! Qui rem itaque exercitationem dolorum. </p>
+
+    <style>
+        body {background-color: brown;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: xx-large;
+    }
+    </style>
+    <h2>Parrafo con la etiqueta style:</h2>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum similique non fugit debitis accusamus laudantium dolorum aperiam consequatur ducimus? Similique atque nostrum, deleniti architecto aspernatur molestiae ducimus quae laudantium! Beatae. </p> 
+            
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima nemo qui quas repellendus hic, veniam dolor vero quam dignissimos aut perferendis corporis nulla, quidem earum, reprehenderit laboriosam labore! Corporis, saepe.</p>
+    <h1 class="CH31" id="Aaron ">Aaron </h1>
+    <h1 class="CH31" id="Brandon">Brandon </h1>
+    <h1 class="CH31" id="Antonio">Antonio </h1>
+    <h1 class="CH31" id="Edna">Edna </h1>
+    <h1 class="CH30" id="Tania">Tania</h1>
+</body>
+</html>
+
+<!--comentarios-->
+<!--
+    existen 3 formas para agregar estilos a documentos de html 1 mejor que otra en el sentido de las buenas prácticas
+
+    orden de jerarquia: inline -> style -> css (documento externo )
+
+    1.- En linea o in line (peor)
+            * para trabajar con los estilos en linea necesitamos utilizar la palabra clave llamada style que activa dicha modificación todo esto se trabaja sobre la etiqueta que queremos modificar (similar a como lo hicimos con el consultorio dental inicial) 
+
+            Tienen una preoridad/preferencia más alta 
+            Alta jerarquía se aplican primero o antes sin importar los demás estilos 
+
+            deventaja: tiempo de carga y de mantenimiento 
+
+            Se pudieran utilizar si hay algún parrafo o solo un elemento al que le queremos aplicar el cambio 
+
+
+    2.- con etiquetas: <style> 
+
+
+    3.- Referencia a un documento de estilos externo (Mejor opción)
+        la tercera nos permite no retrabajar
+                -escalabilidad (tener todo separado y modificar por partes) 
+                -Seguridad en nuestro proyecto
+                -Código más limpio y código entendible 
+                -velocidad de lectura de nuestra pagina 
+    
+    Que estilos puedo modificar en CSS?
+        -ancho y alto de los elementos
+        -posición 
+        -margen y rellenito 
+        -borde
+        -colores(fuente y fondo)
+        -fuente (letra en los textos ) [Google Fonts o Font Awesome]
+    significa tener un documento extra, además de nuestro documento de estructura index.html tendremos un archivo style.css
+    esto es mejor para los tiempos de carga del navegador
+
+    Consideraciones para trabajar con un documento externo 
+        - Llamar a nuestro documento  syle.css
+        - Bases solidad en temás de selectores 
+        - La conexión entre el documento html y las hojas de estilo css se tiene que realizar dentro del head o la cabecera se usa la etiqueta link (<link>) 
+                sintaxis de link <link rel= "stylesheet", href="./Assets/Style/style.css">
+
+
+            la "palabra reservadas" 
+            para clase = .
+            para id = #
+            para eitqueta = (la etiqueta sin <>)
+
+
+            selectores por etiqueta p, h1, etc. 
+            selectores por clase . 
+            selectores por id #
+
+            id tiene mayor jerarquia que la clase 
+            y mayor que la etiqueta 
+         
+
+
+
+-->
